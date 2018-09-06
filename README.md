@@ -16,3 +16,40 @@ Healthy Kitchen CMS PHP Restful API is an online grocery shop. The project is de
 | --------------------- | -------------------- |
 | <img src="/sc/1.PNG"> | <img src="/sc/2.PNG"> |
 | <img src="/sc/3.PNG">| <img src="/sc/4.PNG"> |
+
+### App API Requests
+
+Get all Category:  
+Link : yoursite.com/app/allcategory 
+
+```
+Request Body :
+{ 
+ "token":"app963" 
+} 
+
+Response: 
+{ 
+    "feedData": [ 
+        { 
+            "id": "9", 
+            "categry": "Fruits" 
+        }, 
+        { 
+            "id": "10", 
+            "categry": "Juice" 
+        }, 
+        { 
+            "id": "11", 
+            "categry": "Vegetables" 
+        }, 
+        { 
+            "id": "12", 
+            "categry": "Salad" 
+        } 
+    ] 
+} 
+
+```
+
+
