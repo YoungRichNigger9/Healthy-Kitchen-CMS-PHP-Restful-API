@@ -51,5 +51,125 @@ Response:
 } 
 
 ```
+Get Items Click on Category:  
+Link : yoursite.com/app/getlist  
 
+```
+Request Body : 
+{ 
+ "token":"app963", 
+ "categoryname":"Fruits" 
+}  
 
+Response 
+{ 
+    "feedData": [ 
+        { 
+            "id": "2", 
+            "name": "Kiwi", 
+            "category": "Fruits", 
+            "description": "no des", 
+            "price": "630", 
+            "image": "3.png", 
+            "homepage": "YES" 
+        }, 
+        { 
+            "id": "3", 
+            "name": "Apple", 
+            "category": "Fruits", 
+            "description": "No Des", 
+            "price": "110", 
+            "image": "2.png", 
+            "homepage": "YES" 
+        } 
+    ] 
+} 
+
+```
+Save Customer Information :  
+Link : yoursite.com/app/savecustomer 
+
+```
+Request Body : 
+{ 
+ "token":"app963", 
+ "fname" : "Bhinderjit", 
+ "lname" : "Singh", 
+ "mobile" : "7307258973", 
+ "area" : "Rayya", 
+ "address" : "lohgarh" 
+} 
+Response 
+{ 
+    "success": { 
+        "text": "Saved Sucessfully" 
+    } 
+}
+```
+Get Homepage Products :  
+Link : yoursite.com/app/homepage 
+
+```
+Request Body : 
+{ 
+ "token":"app963" 
+} 
+Response 
+{ 
+    "feedData": [ 
+        { 
+            "id": "2", 
+            "name": "Kiwi", 
+            "category": "Fruits", 
+            "description": "no des", 
+            "price": "630", 
+            "image": "3.png", 
+            "homepage": "YES" 
+        }, 
+        { 
+            "id": "3", 
+            "name": "Apple", 
+            "category": "Fruits", 
+            "description": "No Des", 
+            "price": "110", 
+            "image": "2.png", 
+            "homepage": "YES" 
+        } 
+    ] 
+} 
+```
+Place Order :  
+Link : yoursite.com/app/placeorder 
+
+```
+Request Body : 
+{ 
+ "token":"app963", 
+ "fname":"bhinderjit", 
+ "lname":"Singh", 
+ "mobile":"9915248596", 
+ "area":"Rayya", 
+ "address":"Lohgarh", 
+ "orderitems":[ 
+  { 
+   "itemname":"Apple", 
+   "itemquantity":"6", 
+   "itemprice":"50", 
+   "itemtotal":"300" 
+  }, 
+  { 
+   "itemname":"Lichi", 
+   "itemquantity":"1", 
+   "itemprice":"40", 
+   "itemtotal":"40" 
+  } 
+  ] 
+} 
+ 
+Response 
+{ 
+    "success": { 
+        "text": "Order Placed Sucessfully" 
+    } 
+} 
+```
