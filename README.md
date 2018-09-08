@@ -17,6 +17,43 @@ Healthy Kitchen CMS PHP Restful API is an online grocery shop. The project is de
 | <img src="/sc/1.PNG"> | <img src="/sc/2.PNG"> |
 | <img src="/sc/3.PNG">| <img src="/sc/4.PNG"> |
 
+### Config
+
+1. Config Admin CMS. admin\includes\config.php and set your database server configurations.
+
+```
+<?php 
+// DB credentials.
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASS','');
+define('DB_NAME','healthykitchen');
+// Establish database connection.
+try
+{
+$dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER, DB_PASS,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
+}
+catch (PDOException $e)
+{
+exit("Error: " . $e->getMessage());
+}
+?>
+```
+
+2. 1. Config App API. app\config.php and set your database server configurations.
+
+```
+/* DATABASE CONFIGURATION */
+define('DB_SERVER', 'fdb16.yourhost.com');
+define('DB_USERNAME', 'healthy');
+define('DB_PASSWORD', 'abcdef');
+define('DB_DATABASE', '0783_healthy');
+define("BASE_URL", "http://yoursite.com/app/");
+define("SITE_KEY", 'yourSecretKey');
+```
+
+3. Database file included in Repo.
+
 ### App API Requests
 
 Get all Category:  
@@ -49,7 +86,6 @@ Response:
         } 
     ] 
 } 
-
 ```
 Get Items Click on Category:  
 Link : yoursite.com/app/getlist  
@@ -173,3 +209,5 @@ Response
     } 
 } 
 ```
+
+### Happy Coding...
