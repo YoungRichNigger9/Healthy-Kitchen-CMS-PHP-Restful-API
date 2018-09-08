@@ -52,7 +52,7 @@ define("BASE_URL", "http://yoursite.com/app/");
 define("SITE_KEY", 'yourSecretKey');
 ```
 
-- Database file included in Repo.
+- Database file included in Repo. (healthykitchendb.sql)
 
 ### App API Requests
 
