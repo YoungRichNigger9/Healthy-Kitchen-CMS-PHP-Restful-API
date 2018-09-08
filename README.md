@@ -19,7 +19,7 @@ Healthy Kitchen CMS PHP Restful API is an online grocery shop. The project is de
 
 ### Config
 
-1. Config Admin CMS. admin\includes\config.php and set your database server configurations.
+- Config Admin CMS. admin\includes\config.php and set your database server configurations.
 
 ```
 <?php 
@@ -40,7 +40,7 @@ exit("Error: " . $e->getMessage());
 ?>
 ```
 
-2. 1. Config App API. app\config.php and set your database server configurations.
+- Config App API. app\config.php and set your database server configurations.
 
 ```
 /* DATABASE CONFIGURATION */
@@ -52,7 +52,7 @@ define("BASE_URL", "http://yoursite.com/app/");
 define("SITE_KEY", 'yourSecretKey');
 ```
 
-3. Database file included in Repo.
+- Database file included in Repo.
 
 ### App API Requests
 
