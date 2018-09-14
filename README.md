@@ -57,7 +57,7 @@ define("SITE_KEY", 'yourSecretKey');
 
 ### App API Requests
 
-Get all Category:  
+#### Get all Category:  
 Link : yoursite.com/app/allcategory 
 
 ```
@@ -88,7 +88,8 @@ Response:
     ] 
 } 
 ```
-Get Items Click on Category:  
+#### Get Items Click on Category:  
+
 Link : yoursite.com/app/getlist  
 
 ```
@@ -123,7 +124,7 @@ Response
 } 
 
 ```
-Save Customer Information :  
+#### Save Customer Information :  
 Link : yoursite.com/app/savecustomer 
 
 ```
@@ -143,7 +144,7 @@ Response
     } 
 }
 ```
-Get Homepage Products :  
+#### Get Homepage Products :  
 Link : yoursite.com/app/homepage 
 
 ```
@@ -175,7 +176,7 @@ Response
     ] 
 } 
 ```
-Place Order :  
+#### Place Order :  
 Link : yoursite.com/app/placeorder 
 
 ```
