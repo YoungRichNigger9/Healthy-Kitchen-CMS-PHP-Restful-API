@@ -57,7 +57,7 @@ define("SITE_KEY", 'yourSecretKey');
 
 ### App API Requests
 
-#### Get all Category:  
+#### Get all Category :  
 Link : yoursite.com/app/allcategory 
 
 ```
@@ -88,7 +88,7 @@ Response:
     ] 
 } 
 ```
-#### Get Items Click on Category:  
+#### Get Items Click on Category :  
 
 Link : yoursite.com/app/getlist  
 
